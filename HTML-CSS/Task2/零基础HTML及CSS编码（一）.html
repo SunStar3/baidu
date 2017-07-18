@@ -23,7 +23,7 @@
         <h5 class="artMini">文章作者 文章发表时间</h5>
 
         <p>
-          这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</br>
+              这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</br>
           换行了</br>
           这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>
           这是一个很长很长的段落，这是一个很长很长的段落，<a href="#">这里有一个链接链接到www.baidu.com</a>，这是一个很长很长的段落，
@@ -113,8 +113,8 @@
           <li>排名3</li>
         </ol>
         <p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-        <table border="1">
-        <tr>
+        <table border="1" class="aTable">
+        <tr class="firstTr">
         <td>表头</td>
         <td>表头</td>
         <td>表头</td>
@@ -134,7 +134,7 @@
         <td>表内容单元格</td>
         <td><a href="#">操作</a></td>
         </tr>
-        <tr>
+        <tr class="lastTr">
           <td>总计</td>
           <td colspan="2">1000</td>
         </tr>
@@ -142,38 +142,63 @@
       </div>
 
       <div class="block1">
-        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-        <h2>侧栏注册窗口标题</h2>
-        <form class="" action="index.html" method="post">
-          请输入邮箱地址：
-          <input type="text" name="输入框" value="这是一个文本输入框">
-          <p>邮箱地址请按照要求格式输入</p>
-          请输入密码：
-          <input type="password" name="" value="这是一个文本输入框">
-          请重复输入密码：
-          <input type="password" name="" value="这是一个文本输入框">
-          <p>密码请为6-16位数字</p>
-
-          性别： <input type="radio" name="sex" value="" checked>男
-                <input type="radio" name="sex" value="">女
-          城市：
-          <select class="" name="">
-            <option value="">北京</option>
-            <option value="">上海</option>
-          </select>
-
-          爱好：
-          <input type="checkbox" name="like" value="">运动
-          <input type="checkbox" name="like" value="">艺术
-          <input type="checkbox" name="like" value="">科学
-
-          个人描述：
-          <textarea name="name" rows="2" cols="20"></textarea>
-          <input type="submit" name="确认提交" value="确认提交">
+        <h2 class="sideH2">这里以后是一个侧栏，这是侧栏的标题</h2>
+        <!-- <h2>侧栏注册窗口标题</h2> -->
+        <form class="login" action="index.html" method="">
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="3" height="30"></td>
+            </tr>
+            <tr>
+              <td class="tdLeft">请输入邮箱地址：</td>
+              <td><input type="text" name="输入框" value="这是一个文本输入框"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="tips">邮箱地址请按照要求格式输入</td>
+            </tr>
+            <tr>
+              <td class="tdLeft">请输入密码：</td>
+              <td><input type="password" name="" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+              <td class="tdLeft">请重复输入密码：</td>
+              <td><input type="password" name="" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="tips">密码请为6-16位数字</td>
+            </tr>
+            <tr>
+              <td class="tdLeft">性别：</td>
+              <td><input type="radio" name="sex" value="" checked>男
+                   <input type="radio" name="sex" value="">女</td>
+            </tr>
+            <tr>
+              <td class="tdLeft">城市：</td>
+              <td><select class="" name="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td class="tdLeft">爱好：</td>
+              <td><input type="checkbox" name="like" value="">运动
+              <input type="checkbox" name="like" value="">艺术
+              <input type="checkbox" name="like" value="">科学</td>
+            </tr>
+            <tr>
+              <td class="tdLeft">个人描述：</td>
+              <td><textarea name="name" rows="6" cols="100" placeholder="请输入你的个人描述"></textarea></td>
+            </tr>
+            <!-- <tr>
+              <td><input class="logBut" type="submit" name="确认提交" value="确认提交"></td>
+            </tr> -->
+          </table>
+          <input class="logBut" type="submit" name="确认提交" value="确认提交">
         </form>
       </div>
     </main>
-
     <footer>
       <h5>版权所有</h5>
     </footer>
