@@ -1,9 +1,11 @@
+
 main{
   border: 1px solid #999;
   margin: 10px;
-  height: 450px;
+  min-height: 450px;
   padding: 20px;
   background-color: #eee;
+  overflow: auto;
 }
 
 .left1 {
