@@ -1,9 +1,10 @@
 main{
   border: 1px solid #999;
   margin: 10px;
-  height: 450px;
+  min-height: 450px;
   padding: 20px;
   background-color: #eee;
+  position: relative;
 }
 
 .left1 {
@@ -29,10 +30,9 @@ main{
 .right1 {
   border: 1px solid #999;
   background-color: white;
-  width: 120px;
   position: absolute;
-  /*margin: 0px 20px 0px 1000px;*/
-  right: 40px;
+  width: 120px;
+  right: 20px;
 }
 
 .imgFrame {
